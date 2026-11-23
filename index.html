@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Karan Sharma — AI/ML Engineer (LLMs, Vision-Language, MLOps)</title>
+  <meta name="description" content="Karan Sharma, AI/ML engineer. Deploys LLM, vision-language and diffusion systems to production at Dripi. Open to AI/ML roles.">
+  <meta name="theme-color" content="#eef0f4">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✳</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav">
+    <a class="logo" href="#top">KS✳</a>
+    <nav aria-label="Primary">
+      <a href="#capabilities">Skills</a>
+      <a href="#work">Work</a>
+      <a href="#about">Experience</a>
+    </nav>
+    <a class="btn" href="#contact">Contact</a>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <p class="hello">AI/ML Engineer · Open to full-time roles</p>
+      <h1>I build and deploy AI systems that <em>hold up in production.</em></h1>
+      <p class="lede">LLM, vision-language and diffusion pipelines, from fine-tuning to quantized, containerized APIs. Currently at Dripi, an AI fashion-tech startup.</p>
+      <div class="actions">
+        <a class="btn btn-dark" href="assets/Karan_Sharma_Resume.pdf" target="_blank" rel="noopener">Download resume</a>
+        <a class="btn" href="https://github.com/karannsharma01" target="_blank" rel="noopener">GitHub ↗</a>
+        <a class="btn" href="https://www.linkedin.com/in/karan-sharma01/" target="_blank" rel="noopener">LinkedIn ↗</a>
+      </div>
+    </section>
+
+    <section class="stats" aria-label="Highlights">
+      <div><b>8s</b><span>faster image generation on a 16GB GPU</span></div>
+      <div><b>66</b><span>clothing classes in a try-on pipeline</span></div>
+      <div><b>25.15 dB</b><span>PSNR with ESRGAN on DIV2K</span></div>
+      <div><b>ICMLDE '24</b><span>research paper presentation</span></div>
+      <div><b>150+</b><span>DSA problems solved</span></div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="track">
+        <span>LLMs ✳ RAG ✳ Vision-language models ✳ Diffusion ✳ Quantization ✳ Inference optimization ✳ MLOps ✳ LLMs ✳ RAG ✳ Vision-language models ✳ Diffusion ✳ Quantization ✳ Inference optimization ✳ MLOps ✳ </span>
+        <span>LLMs ✳ RAG ✳ Vision-language models ✳ Diffusion ✳ Quantization ✳ Inference optimization ✳ MLOps ✳ LLMs ✳ RAG ✳ Vision-language models ✳ Diffusion ✳ Quantization ✳ Inference optimization ✳ MLOps ✳ </span>
+      </div>
+    </div>
+
+    <section class="block short" id="short">
+      <h2>Production ML, not just notebooks.</h2>
+      <div class="cols">
+        <p>I'm an AI/ML engineer with a B.Tech in Computer Science (AI &amp; ML) from JNGEC Sundernagar, class of 2026. At Dripi I own models end to end: serving, optimizing and shipping them behind reliable APIs.</p>
+        <p>I've also done research at IIT Mandi and NIT Hamirpur. My RoBERTa question-answering work was selected for the International Conference on Machine Learning and Data Engineering (ICMLDE 2024).</p>
+      </div>
+    </section>
+
+    <section class="block" id="capabilities">
+      <h2>What I work on</h2>
+      <div class="caps">
+        <div><h3>LLMs &amp; retrieval</h3><p>Prompted and fine-tuned language models, retrieval-augmented generation, vector search.</p><p class="tags">LangChain · LLaMA 3.3 · ChromaDB · Qdrant · Hugging Face</p></div>
+        <div><h3>Vision-language &amp; diffusion</h3><p>Multimodal inference and image generation pipelines driven by detection and prompting.</p><p class="tags">Qwen2-VL · FLUX · YOLO · ESRGAN</p></div>
+        <div><h3>Inference optimization</h3><p>Fitting large models into limited GPU memory without losing reliability.</p><p class="tags">4-bit quantization · CPU offloading · async concurrency</p></div>
+        <div><h3>MLOps &amp; deployment</h3><p>Containerized services with automated builds and cloud hosting.</p><p class="tags">Docker · Kubernetes · FastAPI · AWS EC2 · GitHub Actions</p></div>
+      </div>
+    </section>
+
+    <section class="block" id="work">
+      <h2>Selected work</h2>
+      <div class="cards">
+        <article class="card feature wide">
+          <p class="meta">Dripi · Production · 2026</p>
+          <h3>Virtual Try-On / Try-Off pipeline</h3>
+          <dl class="case">
+            <dt>Problem</dt><dd>Generating try-on images needs a heavy diffusion model, but the available GPU had only 16GB of VRAM.</dd>
+            <dt>Approach</dt><dd>Built a FLUX pipeline where YOLO detects garments across 66 classes and drives dynamic prompts. Used strict CPU offloading and parallel execution to stay inside the memory limit.</dd>
+            <dt>Result</dt><dd>Stable generation within 16GB, with 8 seconds less latency per image.</dd>
+          </dl>
+          <p class="tags">FLUX · YOLO · PyTorch · Docker</p>
+        </article>
+        <article class="card feature wide">
+          <p class="meta">Dripi · Production · 2026</p>
+          <h3>Wardrobe valuation API</h3>
+          <dl class="case">
+            <dt>Problem</dt><dd>A vision-language service was timing out (HTTP 504) and crashing on GPU out-of-memory errors under load.</dd>
+            <dt>Approach</dt><dd>Containerized an async Qwen2-VL API with Docker, added application-level semaphores to cap concurrent GPU work, and applied 4-bit quantization.</dd>
+            <dt>Result</dt><dd>Timeouts and OOM crashes eliminated in production.</dd>
+          </dl>
+          <p class="tags">Qwen2-VL · FastAPI · Docker · Quantization</p>
+        </article>
+        <article class="card">
+          <p class="meta">Full-stack · LLM</p>
+          <h3>Price Pilot</h3>
+          <p>Real-time price tracking and review aggregation across e-commerce platforms, with an LLM (Phi-3) that turns reviews into actionable insights.</p>
+          <p class="tags">Flask · Playwright · React · TypeScript · MongoDB · Gemini API</p>
+        </article>
+        <article class="card">
+          <p class="meta">LLM · Retrieval</p>
+          <h3>Cold Mail Generator</h3>
+          <p>LLaMA 3.3 and LangChain write personalized outreach emails. ChromaDB similarity search finds the most relevant portfolio projects to include.</p>
+          <p class="tags">LangChain · ChromaDB · Streamlit · Pandas</p>
+        </article>
+        <article class="card">
+          <p class="meta">Deep learning</p>
+          <h3>ESRGAN super-resolution</h3>
+          <p>Reconstructs high-resolution images from low-resolution inputs using RRDB. Reached 25.15 dB PSNR and 0.90 SSIM on DIV2K.</p>
+          <p class="tags">PyTorch · GAN · OpenCV</p>
+        </article>
+        <article class="card">
+          <p class="meta">NLP · Research</p>
+          <h3>Extractive QA with RoBERTa</h3>
+          <p>Fine-tuned RoBERTa on SQuAD. Selected for presentation at ICMLDE 2024.</p>
+          <p class="tags">RoBERTa · Hugging Face · TensorFlow</p>
+        </article>
+      </div>
+      <p class="more"><a href="https://github.com/karannsharma01" target="_blank" rel="noopener">All repositories on GitHub ↗</a></p>
+    </section>
+
+    <section class="block" id="thinking">
+      <h2>How I work</h2>
+      <div class="tabs" role="tablist" aria-label="Working loop">
+        <button role="tab" aria-selected="true" aria-controls="p0" id="t0">Diagnose</button>
+        <button role="tab" aria-selected="false" aria-controls="p1" id="t1" tabindex="-1">Measure</button>
+        <button role="tab" aria-selected="false" aria-controls="p2" id="t2" tabindex="-1">Ship</button>
+        <button role="tab" aria-selected="false" aria-controls="p3" id="t3" tabindex="-1">Improve</button>
+      </div>
+      <div class="panel" role="tabpanel" id="p0" aria-labelledby="t0">
+        <h3>Find the real bottleneck first.</h3>
+        <p>A timeout, an out-of-memory crash and a slow response each have different causes. I trace the failure before touching the model.</p>
+      </div>
+      <div class="panel" role="tabpanel" id="p1" aria-labelledby="t1" hidden>
+        <h3>Decide the metric up front.</h3>
+        <p>VRAM, latency, error rate, PSNR, SSIM. Every change has to move a number.</p>
+      </div>
+      <div class="panel" role="tabpanel" id="p2" aria-labelledby="t2" hidden>
+        <h3>Deployed is the definition of done.</h3>
+        <p>Containers, async serving, CI/CD and concurrency limits that hold under real traffic.</p>
+      </div>
+      <div class="panel" role="tabpanel" id="p3" aria-labelledby="t3" hidden>
+        <h3>Keep learning in the loop.</h3>
+        <p>Papers, research internships and steady problem solving keep my fundamentals sharp.</p>
+      </div>
+    </section>
+
+    <section class="block" id="about">
+      <h2>Experience &amp; education</h2>
+      <div class="cols">
+        <ul class="timeline">
+          <li><strong>AI/ML Engineer, Dripi</strong><span>Jan 2026 – present · AI fashion-tech startup</span>
+            <em>Deploying quantized vision-language APIs and diffusion try-on pipelines to production.</em></li>
+          <li><strong>Research Intern (ML), IIT Mandi</strong><span>Jun – Jul 2025</span>
+            <em>Built a stacked ensemble model to predict treatment efficacy, handling class imbalance with synthetic data.</em></li>
+          <li><strong>ML Intern, NIT Hamirpur</strong><span>Jun – Jul 2024</span>
+            <em>Fine-tuned RoBERTa for extractive QA on SQuAD. Paper selected for ICMLDE 2024.</em></li>
+          <li><strong>B.Tech, CSE (AI &amp; ML), JNGEC Sundernagar</strong><span>2022 – 2026 · CGPA 7.95 · top 20% of batch</span>
+            <em>Machine learning, deep learning, generative AI, DSA, operating systems, databases.</em></li>
+        </ul>
+        <div>
+          <h3 class="small">Toolbox</h3>
+          <ul class="chips">
+            <li>Python</li><li>C/C++</li><li>JavaScript</li><li>SQL</li>
+            <li>PyTorch</li><li>TensorFlow</li><li>Scikit-learn</li><li>Hugging Face</li><li>LangChain</li>
+            <li>Docker</li><li>Kubernetes</li><li>AWS EC2</li><li>GitHub Actions</li><li>CI/CD</li><li>FastAPI</li>
+            <li>MongoDB</li><li>MySQL</li><li>Qdrant</li><li>ChromaDB</li><li>Streamlit</li>
+          </ul>
+          <h3 class="small mt">Certifications</h3>
+          <ul class="plain">
+            <li>Python 3.4.3 Training, IIT Bombay (2023)</li>
+            <li>SQL and Relational Databases 101, Cognitive Class (2024)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="block contact" id="contact">
+      <h2>Hiring for AI/ML? Let's talk.</h2>
+      <a class="mail" href="mailto:karansharma21004@gmail.com">karansharma21004@gmail.com</a>
+      <p class="links">
+        <a href="assets/Karan_Sharma_Resume.pdf" target="_blank" rel="noopener">Resume (PDF) ↗</a>
+        <a href="https://www.linkedin.com/in/karan-sharma01/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a href="https://github.com/karannsharma01" target="_blank" rel="noopener">GitHub ↗</a>
+        <a href="https://leetcode.com/u/karannsharma01/" target="_blank" rel="noopener">LeetCode ↗</a>
+        <a href="https://www.youtube.com/@karanosharma" target="_blank" rel="noopener">YouTube ↗</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <span>© <span id="year">2026</span> Karan Sharma</span>
+    <a href="#top">Back to the top ↑</a>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
